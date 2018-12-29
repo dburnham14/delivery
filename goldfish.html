@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Teko" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  <link rel="icon" type="image/jpg" href="newlogo4.png">
+       <style type="text/css" media="screen">
+
+
+h1{
+  font-family: 'Alegreya SC', serif;
+}
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 5px;
+    width:700px;
+ 
+  margin-left:auto;
+  margin-right:auto;
+  width:100%;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+ 
+.w3-third{
+  width:280px;
+margin-left:-35px;
+}
+
+
+#text{
+margin-left:-100px;
+  
+}
+.w3-container{
+  width:350px;
+  margin-left:-30px;
+  text-align:center;
+}
+#black{
+  width:370px;
+  margin-left:-30px;
+}
+#pink{
+  
+  margin-top:60px;
+  width:100%;
+  margin-left:80px;
+
+}
+#box{
+  margin-left:-60px;
+  margin-top:5px;
+  
+}
+.w3-card{
+width:300px;
+margin-left:27px;
+}
+
+#mySidebar{
+ width:500px; 
+ margin-left:-60px;
+ margin-top:-62px;
+ background-color:black;
+}
+#mySidebar a {
+  color:white;
+  text-align:center;
+  font-size:20px;
+}
+#footer{
+  margin-left:-70px;
+ 
+  
+  
+}
+#review{
+  margin-left:-65px;
+  
+
+}
+.message{
+  margin-left:15px;
+
+}
+.w3-bar-item{
+  color:white;
+  
+}
+.w3-container h5{
+  margin-left:-125px;
+}
+#text1{
+  margin-left:-120px;
+}
+.hvrbox img{
+  max-width:310px;
+  margin-left:px;
+}
+.hvrbox{
+  max-width:300px;
+}
+#text3 h6{
+margin-left:-130px;
+}
+#w3-card4{
+  margin-left:43px;
+}
+#w3-button{
+    margin-left:-240px;
+    margin-top:-10px;
+}
+.w3-content{
+    margin-left:-40px;
+}
+
+#bigBox{
+    margin-left:-80px;
+}
+.mySlides{
+    width:50px;
+}
+
+#slides{
+  margin-left:-130px;
+}
+
+#texts h6{
+    margin-left:-20px;
+    font-size:14px;
+    width:95%;
+}
+#money{
+   text-align:center;
+}
+#form{
+  width:100%;
+  margin-left:0px;
+}
+#comment{
+  width:350px;
+  margin-left:-30px;
+}
+
+#bigBox{
+  margin-left:0px;
+  width:300px;
+}
+
+#thumbnail img{
+  
+  margin-left:80px;
+}
+#greyBox {
+  width:200px;
+  margin-left:-130px;
+}
+#greyBox2{
+
+  width:550px;
+}
+#texts{
+  width:350px;
+  margin-left:-40px;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+    
+    body
+{
+  padding:10px;
+
+  
+    
+}
+
+
+
+
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			font-family: helvetica;
+      
+		}
+	
+		
+		.info{
+			width: 100%;
+			
+			padding: 7px;
+			text-shadow: 1px 1px 1px #222;
+			color: #fff;
+			font-size: 20px;
+		}
+		.form-box{
+			padding: 20px;
+			background-color: white;
+		}
+		label{
+			color: black;
+			font-size: 18px;
+		}
+		.inp,.msg-box{
+			width: 100%;
+			padding: 10px;
+			margin-top: 4px;
+			margin-bottom: 5px;
+			border-radius: 5px;
+		    font-size:15px;
+			font-weight: bold;
+			color: black;
+			
+			resize: none;
+		}
+        .inp{
+            font-size:15px;
+        }
+		.msg-box{
+			height: 80px;
+		}
+		.inp:focus,.msg-box:focus{
+			outline: none;
+			
+		}
+        #checkboxes{
+            font-family: 'Teko', sans-serif;
+            font-size: 25px;
+        }
+           
+
+        
+		.sub-btn{
+			width: 100%;
+			padding: 10px;
+			border-radius: 5px;
+			margin-top: 5px;
+			border: none;
+			background: linear-gradient(#dc143c,#800000);
+			cursor: pointer;
+			color: #fff;
+			font-size: 20px;
+			text-shadow: 1px 1px 1px #444;
+		}
+		.sub-btn:hover{
+			background: linear-gradient(#800000,#dc143c);
+			opacity: 0.8;
+			transition: all ease-out 0.2s;
+		}
+		.sub-btn:focus{
+			outline: none;
+		}
+		@media(max-width: 720px){
+			.main{
+				width: 90%;
+			}
+    
+		}
+    .column img {
+  
+   
+  
+    }
+
+.row{
+  width:100%;
+  max-width:900px;
+margin-left:auto;
+margin-right:auto;
+}
+
+    #footer{
+      width:100%;
+      background-color:black;
+    }
+    .box {
+      text-align: center;
+    }
+
+  
+    .right{
+      width:380px;
+      border: solid 1px gray;
+      height:380px;
+  }
+
+input.box{
+  text-align:center;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+
+
+/* STRUCTURE */
+
+.wrap {
+	padding: 5px;
+	max-width: 1425px;
+	width: 95%;
+	margin: 20px auto;
+
+}
+header {
+	padding: 0 15px;
+}
+
+.colons {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+  max-width:400px;
+}
+
+.colon {
+	flex: 1;
+	border: 1px solid gray;
+	margin: 2px;
+	padding: 10px;
+  max-width:400px;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+	
+}
+
+footers {
+	padding: 0 15px;
+}
+
+
+@media screen and (max-width: 980px) {
+  .colons .colon {
+		margin-bottom: 5px;
+    flex-basis: 40%;
+		&:nth-last-child(2) {
+			margin-right: 0;
+		}
+		&:last-child {
+			flex-basis: 100%;
+			margin: 0;
+		}
+	}
+  #box{
+    margin-top:-60px;
+  }
+ 
+}
+
+@media screen and (max-width: 680px) {
+	.colons .colon {
+		flex-basis: 100%;
+		margin: 0 0 5px 0;
+	}
+  #pink{
+    margin-top:-60px;
+  }
+}
+
+
+ .mySlides {display:none;}
+
+p{
+  text-align:center;
+  font-family: 'Teko', sans-serif;
+  font-size:25px;
+}
+
+.centered {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.column p {
+    margin-top:-20px;
+    font-size:30px;
+    font-family: 'Boogaloo', cursive;
+    
+}
+/*HOVER TEXT*/
+CSS
+
+.hvrbox,
+.hvrbox * {
+	box-sizing: border-box;
+}
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+}
+.hvrbox img {
+	width: 100%;
+}
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+  background: pink;
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+.hvrbox .hvrbox-text {
+	text-align: center;
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
+
+
+
+.hvrbox,
+.hvrbox * {
+	box-sizing: border-box;
+}
+.hvrbox {
+	position: relative;
+	display: inline-block;
+	overflow: hidden;
+	width: 100%;
+	height: auto;
+}
+.hvrbox img {
+	width: 100%;
+}
+
+.hvrbox .hvrbox-layer_bottom {
+	display: block;
+}
+.hvrbox .hvrbox-layer_top {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: pink;
+	color: #fff;
+	padding: 15px;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hvrbox:hover .hvrbox-layer_top,
+.hvrbox.active .hvrbox-layer_top {
+	opacity: 1;
+}
+.hvrbox .hvrbox-text {
+	text-align: center;
+	font-size: 18px;
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+.hvrbox .hvrbox-text_mobile {
+	font-size: 15px;
+	border-top: 1px solid rgb(179, 179, 179); /* for old browsers */
+	border-top: 1px solid rgba(179, 179, 179, 0.7);
+	margin-top: 5px;
+	padding-top: 2px;
+	display: none;
+}
+.hvrbox.active .hvrbox-text_mobile {
+	display: block;
+}
+/*HOVER TEXT*/
+
+p{
+  margin-top:10px;
+}
+
+.mySlides{
+    margin-left:100px;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+body
+{
+  background-color: #fcfcfc;
+}
+.container
+{
+  text-align: center;
+  padding: 15px;  
+}
+.left-div
+{
+  display: inline-block;
+  max-width: 750px;
+  text-align: left;
+  padding: 30px;
+  background-color: white;
+  border-radius: 3px;
+  margin: 15px;
+  vertical-align: top;
+}
+.right-div
+{
+  display: inline-block;
+  max-width: 650px;
+  text-align: left;
+  padding: 30px;
+  background-color: white;
+  border-radius: 3px;
+  margin: 15px;
+}
+.left-text, .right-text
+{
+  font: 14px 'Source Code Pro', monospace;
+	color: #333;
+}
+@media screen and (max-width: 600px) 
+{
+  .left-div, .right-div
+    {
+       max-width: 100%;
+    }
+}
+
+
+
+}
+    </style>
+<body>
+
+
+        <div class="w3-container">
+<!-- Sidebar -->
+<!-- Sidebar -->
+<div id="w3-button">
+<button style="margin-left:-5px;" class="w3-button w3-light-grey w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
+</div>
+<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left"  id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large w3-hide-large" style="text-align:center;"onclick="w3_close()">Close &times;</button>
+    <a href="index.html"class="w3-bar-item w3-button" style="font-family: 'Oswald', sans-serif;text-align:center;font-size:20px;">HOME</a>
+    <a href="cerealbars.html" class="w3-bar-item w3-button"style="font-family: 'Oswald', sans-serif;text-align:center;font-size:20px;">Edible Cereal bars</a>
+    <a href="edibleCandy.html" class="w3-bar-item w3-button"style="font-family: 'Oswald', sans-serif;text-align:center;font-size:20px;">Edible Candy</a>
+    <a href="edibleSnacks.html" class="w3-bar-item w3-button"style="font-family: 'Oswald', sans-serif;text-align:center;font-size:20px;">Edible Snacks</a>
+    <a href="smokeables.html" class="w3-bar-item w3-button"style="font-family: 'Oswald', sans-serif;text-align:center;font-size:20px;">Smokeables</a>
+
+  </div>
+
+<!-- Page Content -->
+
+    
+    <div style="margin-left:15%">
+
+        <div class="w3-container">
+            <div id="box" style=" width:800px; width:100%;height:60px;margin-top:px;">
+              <p  id="pink"style="font-family: 'Sedgwick Ave', cursive;font-size:35px;color:black;margin-top:10px;">1UpDelivery <img src="lillogo.png" style="max-width:75px;"></p>
+          </div>
+          <div style="margin-left:auto;margin-right:auto;text-align:center;margin-top:40px;">
+            
+            
+          </div>
+          <script>
+              function w3_open() {
+                  document.getElementById("mySidebar").style.display = "block";
+              }
+              function w3_close() {
+                  document.getElementById("mySidebar").style.display = "none";
+              }
+              </script>
+      
+  
+
+
+
+      <div class="container">
+          <div id="bigBox">
+      <div class="left-div left-text">
+          <div class="w3-content" style="max-width:1500px;width:100%;">
+            
+           <div id="slides">
+             <div id="lilslides" ">
+            <img class="mySlides" src="biggoldfish.png" style="width:100%;max-width:550px;display:none">
+            <img class="mySlides" src="goldfish3.png" style="width:100%;max-width:550px;display:none">
+            
+          </div>
+        </div>
+        <div id="thumbnail" >
+            <div class="w3-row-padding w3-section">
+              <div class="w3-col s4">
+                  <div id="greyBox" >
+                <img class="demo w3-opacity w3-hover-opacity-off" src="biggoldfish.png" style="width:100%;max-width:350px;cursor:pointer" onclick="currentDiv(1)">
+            </div>
+              </div>
+              <div id="greyBox2">
+              <div class="w3-col s4">
+                <img class="demo w3-opacity w3-hover-opacity-off" src="goldfish3.png" style="width:100%;max-width:300px;cursor:pointer" onclick="currentDiv(2)">
+              </div>
+            </div>
+            
+          </div>
+            </div>
+          </div>
+          
+          <script>
+          function currentDiv(n) {
+            showDivs(slideIndex = n);
+          }
+          
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length}
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+               dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+            }
+            x[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " w3-opacity-off";
+          }
+          </script>
+          </div>
+         
+      <div class="right-div right-text" style="width:100%;max-width:450px;text-align:center;font-size:25px;font-family: 'Teko', sans-serif;">Edible Goldfish
+            <h3 style="font-family: 'Oswald', sans-serif;">300mg</h3>
+            <div id="texts">
+            <h6 style="font-family: 'Alegreya', serif;text-align:center;">
+                   Edible snacks made with the highest strain of canabis. Guaranteed to meet your recreational or medical satisfaction.
+            </h6>
+                </div>
+                <div id="money">
+<h3 style="text-align:center;font-family: 'Tenali Ramakrishna', sans-serif;">$15.00</h3>
+<div id="form">
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="J4XNU4YJX27V8">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+      </form>
+      
+    </div>
+
+    </div>
+      </div>
+
+    </div>
+</div>
+
+
+
+
+   
+
+
+          
+  
+ 
+
+
+
+
+    
+
+
+
+
+     
+        <script>
+                var expanded = false;
+                function showCheckboxes() {
+                    var checkboxes = document.getElementById("checkboxes");
+                    if (!expanded) {
+                        checkboxes.style.display = "block";
+                        expanded = true;
+                    } else{
+                        checkboxes.style.display = "none";
+                        expanded = false;
+                    }
+                    }
+                
+            </script>
+
+
+</div>
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
